@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.TextView;
 
+import java.util.Random;
+
 
 public class DisplayMessageActivity extends ActionBarActivity {
 
@@ -20,9 +22,21 @@ public class DisplayMessageActivity extends ActionBarActivity {
         //create the text view
         TextView textView = new TextView(this);
         textView.setTextSize(40);
-        textView.setText(message);
 
+        Random random = new Random();
+        int rand = random.nextInt(2) + 1;
+        String[] answer = {"Yes", "No"};
+        System.out.println(rand);
+        String ans;
+        if (rand > 1){
 
+           ans = answer[0];
+        } else {
+
+           ans = answer[1];
+        }
+
+        textView.setText(message + "    " + ans);
 
         // set the text view as the activity layout
         setContentView(textView);
