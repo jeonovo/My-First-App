@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Answer</string>
+    <string name="app_name">The Answer</string>
     <string name="edit_message">Ask a Question</string> <!-- this was created in activity xml -->
     <string name="button_send">Send</string>
     <string name="action_settings">Settings</string>

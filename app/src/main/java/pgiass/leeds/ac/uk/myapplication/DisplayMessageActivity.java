@@ -28,10 +28,10 @@ public class DisplayMessageActivity extends ActionBarActivity {
         String[] answer = {"Yes", "No"};
         System.out.println(rand);
         String ans;
-        if (rand > 1){
-
-           ans = answer[0];
-        } else {
+        if (rand > 1) {
+            ans = answer[0];
+        }
+        else {
 
            ans = answer[1];
         }
